@@ -1,0 +1,23 @@
+Welcome to fdisk (util-linux 2.23.2).
+
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+
+Command (m for help): Partition number (1-3, default 3): Partition 3 is deleted
+
+Command (m for help): Partition type:
+   p   primary (2 primary, 0 extended, 2 free)
+   e   extended
+Select (default p): Partition number (3,4, default 3): First sector (1587200-62521343, default 1587200): Using default value 1587200
+Last sector, +sectors or +size{K,M,G} (1587200-62521343, default 62521343): Using default value 62521343
+Partition 3 of type Linux and of size 29.1 GiB is set
+
+Command (m for help): The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: Re-reading the partition table failed with error 16: Device or resource busy.
+The kernel still uses the old table. The new table will be used at
+the next reboot or after you run partprobe(8) or kpartx(8)
+Syncing disks.

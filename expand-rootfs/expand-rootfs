@@ -16,6 +16,16 @@ if [ $COUNT -ne 3 ] ; then
 	exit 1
 fi
 
+# Q: why am I testing the size as a string instead of an int?
+SIZEOFP3=$( sudo fdisk -l /dev/mmcblk0  |grep mmcblk0p3 |awk '{print $4}' )
+if [ "X$SIZEOFP3" = "X30467072" ] ; then
+	echo "Looks like you already expanded the partition and are ready to resize."
+	# extra credit - how would you add a question to the user here
+	# to see if they want to proceed?
+	sudo resize2fs /dev/mmcblk0p3
+	exit 0    # Q: why zero?
+fi
+
 sudo fdisk $ROOTPART > fdisk.log <<BANG
 d
 3
@@ -27,6 +37,13 @@ p
 w
 BANG
 
+echo "The disk partitions are changed, but the machine won't see the changes"
+echo "until after you reboot.  Therefore,"
+echo "1. reboot the machine"
+echo "2. sudo resize2fs /dev/mmcblk0p3"
+
 # Lessons:
 # - shbang
 # - hereis document
+# - test
+# - $? and proper exit values
