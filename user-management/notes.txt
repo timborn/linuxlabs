@@ -1,0 +1,8 @@
+Thu Sep 20 15:34:50 CDT 2018
+----------------------------
+When adding a user to a group it's pretty important to use the '-a'
+flag with the '-G' flag.  For example:
+
+usermod -G xrayusers timborn
+
+It works, but because I wasn't appending (-a) I LOST my wheel group!
