@@ -1,0 +1,33 @@
+1. (all from the command line) Create an account for Alice
+
+useradd -m alice   # -m to create a home directory
+# TODO: is alice in wheel?
+
+2. Create a new group for xrayusers 
+
+newgroup xrayusers
+
+3. Create a dummy script /bin/telescope.sh and set permissions so it can ONLY be executed by xrayusers group
+
+cat > /bin/telescope.sh
+TODO TODO
+
+4. Test using Alice; add Alice to xrayusers group; test again
+
+# need to set a password for alice 
+su - alice
+/bin/telescope.sh   # expect failure
+
+sudo usermod -a -G xrayusers alice
+sudo alice id  # will this work?
+
+5. Create an account for Bob, and make sure he is also in the X-rayusers group.
+
+useradd -m -G xrayusers bob
+
+6. Test & confirm
+7. (extra credit) automate your test
+
+--------
+all these sudo will be annoying if we have to keep typing a password
+show how to set up sudo to skip the password
