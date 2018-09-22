@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+# making some rough assumptions this is used on ~32GB SDCard on RPi + CentOS7
+ROOTPART=/dev/mmcblk0
+
+if [ ! -e $ROOTPART ] ; then
+	echo "Error: expecting rootfs at $ROOTPART"
+	exit 1
+fi
+
+# call me paranoid, but if there isn't exactly three partitions, I'm done
+COUNT=$( sudo fdisk -l $ROOTPART  | grep ^/dev | wc -l )
+if [ $COUNT -ne 3 ] ; then
+	echo "Error: looks like your root partition has been touched."
+	echo "You're on your own now."
+	exit 1
+fi
+
+sudo fdisk $ROOTPART > fdisk.log <<BANG
+d
+3
+n
+p
+3
+
+
+w
+BANG
+
+# Lessons:
+# - shbang
+# - hereis document
