@@ -1,0 +1,6 @@
+1. which services are installed on your system?
+2. which services are active (enabled) on your system?
+3. Install a new service; configure it to start on reboot
+4. Test & confirm
+5. Uninstall the service
+6. Find a service that is installed and configure it to run

@@ -1,0 +1,33 @@
+1. which services are installed on your system?
+
+	systemctl -a --type service
+	systemctl list-unit-files --type service
+
+2. which services are active (enabled) on your system?
+
+	systemctl list-unit-files --type service | grep 
+
+Q: what are all the different states shown?
+
+	systemctl list-unit-files --type service |  
+	awk '{ print $2 }' | sort -u
+
+Q: installed versus loaded??
+
+3. Install a new service; configure it to start on reboot
+4. Test & confirm
+5. Uninstall the service
+6. Find a service that is installed and configure it to run
+
+----
+If you don't have a service in mind to play with for these exercises,
+you can try this one: How To Create a systemd Service in Linux (CentOS
+7). 
+http://linuxlabs.duckdns.org:8080/#%20https%3A%2F%2Fscottlinux.com%2F2014%2F12%2F08%2Fhow-to-create-a-systemd-service-in-linux-centos-7%2F 
+While it's actually more than the exercise calls for, you get to see
+how to create the unit for and "wrap" an existing tool so it becomes a
+well-formed service.
+
+See Also: iperf3 example
+http://
+https%3A%2F%2Fsupport.cumulusnetworks.com%2Fhc%2Fen-us%2Farticles%2F216509388-Throughput-Testing-and-Troubleshooting

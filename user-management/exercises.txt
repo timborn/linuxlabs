@@ -4,4 +4,5 @@
 4. Test using Alice; add Alice to xrayusers group; test again
 5. Create an account for Bob, and make sure he is also in the X-rayusers group.
 6. Test & confirm
-7. (extra credit) automate your test
+7. Create a system account that can never login
+8. (extra credit) automate your test
