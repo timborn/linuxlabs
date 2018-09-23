@@ -10,7 +10,12 @@ newgroup xrayusers
 3. Create a dummy script /bin/telescope.sh and set permissions so it can ONLY be executed by xrayusers group
 
 cat > /bin/telescope.sh
-TODO TODO
+echo you are running the xray telescope
+^D
+
+chgrp xrayusers /bin/telescope.sh
+chmod 050 /bin/telescope.sh
+NB shell scripts need both r+x 
 
 4. Test using Alice; add Alice to xrayusers group; test again
 
