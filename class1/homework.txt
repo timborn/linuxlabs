@@ -1,0 +1,27 @@
+(after class 1)
+
+Reminder - you need all of this before class #2
+
+requires: personal laptop
+Build your RPi
+name your machine / resize partition
+Update your software
+Install ssh
+Install VNC
+Verify you can connect to your RPi without the monitor 
+
+Resources:
+
+WIKI
+linuxlabs.duckdns.org:8080
+rpi / linuxrules
+Use it to collaborate.  If you learning something worth sharing, 
+make a new page & link it in.
+
+These slides are at http://deltacfax.com/timborn/Linux-Workshop.pdf. 
+
+We should probably run most of the conversation and machines outside the 
+company, so pls drop me a note with your personal email.  I'm pretty sure
+this class will want to have discussions together.
+
+timothy.d.born@gmail.com

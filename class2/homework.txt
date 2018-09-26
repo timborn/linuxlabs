@@ -1,0 +1,20 @@
+We left off a little bit of the service management homework, and I
+suggested that there was a slightly more elaborate but rewarding
+exercise - converting a package into a service so it behaves well
+on your system.  On the wiki, under Service Management Exercises:
+
+If you don't have a service in mind to play with for these exercises,
+you can try this one: How To Create a systemd Service in Linux
+(CentOS 7). While it's actually more than the exercise calls for,
+you get to see how to create the unit for and "wrap" an existing
+tool so it becomes a well-formed service.
+
+See Also: iperf3 example
+
+---
+
+Don't forget your homework before the next class
+
+BEFORE lesson three:
+- read an edition of MagPi & think about your final project
+- RHEL7 System Administrator's Guide, Chapter 9 - Yum

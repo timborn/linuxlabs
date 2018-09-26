@@ -1,0 +1,15 @@
+(before class #2)
+
+greetings - 
+
+You have more reading _before_ class #2.  We have two topics in mind:
+
+1. User Management
+- RHEL7 System Administrator's Guide, ch. 4, Managing Users and Groups
+- Sudo, ibid ch. 6
+
+2. Service Management
+RHEL7 System Administrator's Guide - ch 10, systems
+
+RHEL7 System Administrator's Guide (pdf):
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/system_administrators_guide/Red_Hat_Enterprise_Linux-7-System_Administrators_Guide-en-US.pdf
