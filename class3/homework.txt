@@ -1,0 +1,6 @@
+Homework before the class 4
+
+- RHEL7 System Administrator's Guide, ch. 20, System Monitoring Tools
+- RedHat Networking guide 1.11 configuring netconsole - looks like a way to use syslog
+- RHEL7 System Administrator's Guide, Chapter 22, Viewing and Managing Log Files
+
