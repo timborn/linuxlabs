@@ -1,0 +1,60 @@
+1. Use logger(1) to send log msgs from a shell script to system log
+
+logger "this is some error msg"
+
+2. Use facility = user
+
+logger -p user ...
+
+2a. Send a msg w/ level “warning”; check the logs
+
+logger -p user.warning WARNING
+
+2b. Send a msg w/ level “debug”; check the logs
+
+logger -p user.debug DEBUG
+
+3. Explain & fix
+
+DEBUG level isn't being logged, but WARNING level is.
+This is controlled by /etc/rsyslog.conf
+
+grep -v ^$ /etc/rsyslog.conf | grep -v ^#
+
+The line that is filtering out DEBUG messages is this one:
+*.info;mail.none;authpriv.none;cron.none                /var/log/messages
+
+4. What is the order (precedence) of logging levels?
+
+(from logger(1)):
+
+Valid level names are:
+
+              emerg	<-- highest priority
+              alert
+              crit
+              err
+              warning
+              notice
+              info
+              debug	<-- lowest priority
+
+
+-------
+
+1. Configure rsyslog to send *all* msgs from facility ‘local0’ to 
+   a special log file 
+
+# /etc/rsyslog.conf:
+> # my special logfile
+> local0.*	/var/log/tims-log
+
+sudo systemctl restart rsyslog
+
+2. Test it
+
+logger -p local0.warn WARN-WARN-WARN
+
+sudo cat /var/log/tims-log
+
+# NB to really test it, send in DEBUG and confirm, since DEBUG is filtered

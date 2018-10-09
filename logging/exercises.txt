@@ -1,0 +1,12 @@
+1. Use logger(1) to send log msgs from a shell script to system log
+2. Use facility = user
+2a. Send a msg w/ level “warning”; check the logs
+2b. Send a msg w/ level “debug”; check the logs
+3. Explain & fix
+4. What is the order (precedence) of logging levels?
+
+-------------
+
+1. Configure rsyslog to send *all* msgs from facility ‘local0’ to 
+   a special log file 
+2. Test it
