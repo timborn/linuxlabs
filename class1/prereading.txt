@@ -1,0 +1,7 @@
+BEFORE class 1 
+
+- student bring personal laptops to class, so we can confirm headless (and get rid of monitors)
+- read "Understanding bash: Elements of Programming", Linux Journal 
+  https://www.linuxjournal.com/content/understanding-bash-elements-programming
+- Get a copy of Advanced Bash-Scripting Guide for use as a reference
+  www.iitk.ac.in/LDP/LDP/abs/abs-guide.pdf

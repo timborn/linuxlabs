@@ -1,0 +1,8 @@
+Homework before the class 5 (Networking Topics)
+
+- RHEL7 Networking Guide, chapters 2.1, 2.2, 3, 10, 11
+
+Please don't forget your project is due in two weeks (class 6).
+If you haven't started yet, time is running out.
+Delivering your demo in front of the Linux CoP is encouraged.
+Spread the joy!
