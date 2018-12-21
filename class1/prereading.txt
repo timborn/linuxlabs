@@ -1,7 +1,23 @@
 BEFORE class 1 
 
-- student bring personal laptops to class, so we can confirm headless (and get rid of monitors)
-- read "Understanding bash: Elements of Programming", Linux Journal 
-  https://www.linuxjournal.com/content/understanding-bash-elements-programming
-- Get a copy of Advanced Bash-Scripting Guide for use as a reference
+Greetings all –
+ 
+YOU ARE COHORT #5 (“early risers”) WHICH MEETS EVERY Tuesday FROM 0630-0830 starting 1/29/19
+ 
+The rules of the road for the Linux class are:
+1.       These classes are done on your own time, out of whatever your normal hours are.
+2.       The class runs for six weeks, two hours of class each week, with reading and other homework.
+3.       Technically for FTE only.  If you have questions, just see me.  We can probably work something out.
+4.       Personal laptop would be very helpful.  Our first lesson involves building our Raspberry Pi and then making it usable without a monitor and keyboard (“headless”), so a personal laptop is useful to confirm when you have ssh & VNC running correctly.
+5.       Qualifications and sign up here: https://confluence.uk.jpmorgan.com/confluence/display/SMOKEJUMPERS/Linux+Raspberry+Pi
+ 
+TODO:
+1.       As we will be doing most of this out of hours off corp network, if you are up for it, sharing your personal email address would help.
+2.       There is HOMEWORK before you even show up.  Required pre-reading.
+a.       read "Understanding bash: Elements of Programming", Linux Journal 
+ https://www.linuxjournal.com/content/understanding-bash-elements-programming
+b.      Get a copy of Advanced Bash-Scripting Guide for use as a reference
   www.iitk.ac.in/LDP/LDP/abs/abs-guide.pdf
+ 
+-tim
+
