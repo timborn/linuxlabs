@@ -13,3 +13,9 @@ RHEL7 System Administrator's Guide - ch 10, systems
 
 RHEL7 System Administrator's Guide (pdf):
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/system_administrators_guide/Red_Hat_Enterprise_Linux-7-System_Administrators_Guide-en-US.pdf
+
+To spur your creative juices for ideas for your FINAL PROJECT, have a look
+at MagPi, a magazine about Raspberry Pis.  There are more than 75 issues
+freely available on line.  Here's a link to one:
+https://www.raspberrypi.org/magpi-issues/MagPi77.pdf
+
