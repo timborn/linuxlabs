@@ -1,0 +1,13 @@
+
+Network Capture
+---------------
+Class #5 - capture e.g. google.com by hijacking DNS
+
+Edit /etc/hosts on linuxlabs-gw
+
+127.0.0.1  google.com
+
+$ sudo systemctl reload dnsmasq  # force dnsmasq to reload config files
+
+Now all attempts to get to google.com are captured by the gateway.
+Extra credit if you run a local webserver and capture it there.

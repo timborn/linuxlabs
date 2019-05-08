@@ -1,0 +1,25 @@
+Wed May  8 16:09:51 CDT 2019
+----------------------------
+
+Network Configuration
+---------------------
+linuxlabs / linuxlabs5
+
+192.168.0.x/24
+192.168.0.52 linuxlabs-gw.local
+192.168.0.55 linuxlabs-ap.local
+
+Access Point
+------------
+TP-Link Archer C50
+default ip: 192.168.0.1  (we expect .55)
+default login: admin/admin
+proper login: admin/trouble (?)
+
+linuxlabs / linuxlabs5 / linuxrules
+
+This should be named linuxlabs-ap.local on 192.168.0.55
+
+TODO: There is a cached image for this router that you can restore if need be
+at /PATH/IN/REPO???
+
